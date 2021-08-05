@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.imglogo{
+    width: 150px;
+}
+
+.accueil{
+    display: flex;
+    flex-direction: row;
+    border: solid 2px blueviolet;
+}
+
+.liens{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.filtres{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.hebergements{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "m p";
+    border: solid 2px fuchsia;
+}
+
+.marseille{
+    grid-area: m;
+}
+
+.populaires{
+    grid-area: p;
+}
+
+.haut{
+    display: flex;
+    flex-direction: row;
+}
+
+.bas{
+    display: flex;
+    flex-direction: row;
+}
+
+.imgcannebiere{
+    width: auto;
+    height: 150px;
+}
+
+.cannebiere{
+    border: solid 2px red;    
+}
+
+.imgmer{
+    width: auto;
+    height: 150px;
+}
+
+.mer{
+    border: solid 2px blue;
+}
+
+.imgport{
+    width: auto;
+    height: 150px;
+}
+
+.port{
+    border: solid 2px green;
+}
+
+.imgpanier{
+    width: auto;
+    height: 150px;
+}
+
+.panier{
+    border: solid 2px pink;
+}
+
+.imgmouettes{
+    width: auto;
+    height: 150px;
+}
+
+.mouettes{
+    border: solid 2px orange;
+}
+
+.imgamina{
+    width: auto;
+    height: 150px;
+}
+
+.amina{
+    border: solid 2px brown;
+}
+
+.imgsoleil{
+    width: auto;
+    height: 150px;
+}
+
+.soleil{
+    border: solid 2px cyan;
+}
+
+.imgeau{
+    width: auto;
+    height: 150px;
+}
+
+.eau{
+    border: solid 2px gray;
+}
+
+.imgbleu{
+    width: auto;
+    height: 150px;
+}
+
+.bleu{
+    border: solid 2px black;
+}
