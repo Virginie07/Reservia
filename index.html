@@ -11,100 +11,111 @@
 
 <body>
 
-    <nav class="accueil">
+    <!-- Header....................................... -->
 
+    <div class="tete">
         <img src="./images/Reservia@3x.png" alt="" class="imglogo">
+       
+        <nav class="accueil">
 
-        <ul class="liens">
-            <li><a href="#hebergements">Hébergements</a></li>
-            <li><a href="#activites">Activités</a></li>
-            <li>S'inscrire</li>
-        </ul> 
+            <ul>
+                <li><a href="#hebergements">Hébergements</a></li>
+                <li><a href="#activites">Activités</a></li>
+                <li>S'inscrire</li>
+            </ul> 
 
-    </nav>
+        </nav>
+    </div>
     
+    <!-- Recherche..................................... -->
+
 <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
 <p>En plein centre ville ou en pleine nature</p>
 
-<input type="search">
+<div class="bouton">
 
-<ul class="filtres">
-    <li>Filtres</li>
-    <li>Economique</li>
-    <li>Familial</li>
-    <li>Romantique</li>
-    <li>Animaux autorisés</li>
-</ul>
+    <input type="search">
+    <button>Rechercher</button>
+
+</div>
+
+    <!-- Filtres........................................ -->
+
+<div class="filtres">
+
+    <p>Filtres</p>
+    <p class="f">Economique</p>
+    <p class="f">Familial</p>
+    <p class="f">Romantique</p>
+    <p class="f">Animaux autorisés</p>
+
+</div>
 
 <p>Plus de 500 logements sont disponibles dans cette ville</p>
 
+    <!-- Espace Hébergement.............................. -->
+
 <section class="hebergements">
+
+    <h2 id="#hebergements">Hébergements à Marseille</h2>
 
     <div class="marseille">
 
-        <h2 id="#hebergements">Hébergements à Marseille</h2>
 
-        <div class="haut">
+        <div class="cannebiere">
 
-            <div class="cannebiere">
-
-            <img src="./images/Auberge_Cannebiere.jpg" alt="" class="imgcannebiere">
+            <!-- <img src="./images/Auberge_Cannebiere.jpg" alt="" class="imgcannebiere"> -->
             <p><b>Auberge La Cannebière</b></p>
             <p>Nuit à partir de <b>25€</b></p>
 
-            </div>
+        </div>
 
-            <div class="port">
+        <div class="mer">
+
+            <img src="./images/Hotelmer.jpg" alt="" class="imgmer">
+            <p><b>Hôtel de la mer</b></p>
+            <p>Nuit à partir de <b>46€</b></p>
+
+        </div>
+
+        <div class="port">
 
                 <img src="./images/Hotel_port.jpg" alt="" class="imgport">
                 <p><b>Hôtel du port</b></p>
                 <p>Nuit à partir de <b>52€</b></p>
     
-            </div>
-
-            <div class="mouettes">
-
-                <img src="./images/Hotel_mouettes.jpg" alt="" class="imgmouettes">
-                <p><b>Hôtel Les Mouettes</b></p>
-                <p>Nuit à partir de <b>76€</b></p>
-    
-            </div>
-
         </div>
 
-        <div class="bas">
-
-            <h2>Les plus populaires</h2>
-
-            <div class="mer">
-
-                <img src="./images/Hotelmer.jpg" alt="" class="imgmer">
-                <p><b>Hôtel de la mer</b></p>
-                <p>Nuit à partir de <b>46€</b></p>
-    
-            </div>
-
-            <div class="panier">
+        <div class="panier">
 
             <img src="./images/Auberge_Panier.jpg" alt="" class="imgpanier">
             <p><b>Auberge Le Panier</b></p>
             <p>Nuit à partir de <b>23€</b></p>
 
-            </div>
+        </div>
 
-            <div class="amina">
+        <div class="mouettes">
+
+                <img src="./images/Hotel_mouettes.jpg" alt="" class="imgmouettes">
+                <p><b>Hôtel Les Mouettes</b></p>
+                <p>Nuit à partir de <b>76€</b></p>
+    
+        </div>
+
+
+        <div class="amina">
 
             <img src="./images/Hotel_Amina.jpg" alt="" class="imgamina">
             <p><b>Hôtel chez Amina</b></p>
             <p>Nuit à partir de <b>96€</b></p>
-
-            </div>
 
         </div>
 
     </div>
 
     <div class="populaires">
+
+        <h2>Les plus populaires</h2>
 
         <div class="soleil">
 
@@ -132,6 +143,7 @@
         </div>
 
     </div>
+
 
 </section>
 

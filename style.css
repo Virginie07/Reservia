@@ -4,13 +4,31 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+/* header................................ */
+
+.tete{
+    border: solid 2px red;
+    display: flex;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .imglogo{
     width: 150px;
 }
 
 .accueil{
-    display: flex;
-    flex-direction: row;
+    width: 30%;
+    margin-left: auto;
     border: solid 2px blueviolet;
 }
 
@@ -18,8 +36,18 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    list-style-type: none;
 }
+
+/* Bouton recherche............................ */
+
+.bouton{
+    
+    border: solid 1px grey;
+    border-radius: 50px;
+
+} 
+
+/* Filtres......................................*/
 
 .filtres{
     display: flex;
@@ -27,38 +55,48 @@
     list-style-type: none;
 }
 
+/* Espace Hébergement........................... */
+
 .hebergements{
     display: grid;
     grid-template-columns: 1fr auto;
     grid-template-areas: "m p";
+    grid-gap: 4px;
     border: solid 2px fuchsia;
 }
 
+/* Marseille.................................... */
+
 .marseille{
     grid-area: m;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "c po mo"
+    "me pa a";
+    border-radius: 50px;
+    background: grey;
 }
 
 .populaires{
+    border-radius: 50px;
+    background: grey;
     grid-area: p;
 }
 
-.haut{
-    display: flex;
-    flex-direction: row;
-}
-
-.bas{
-    display: flex;
-    flex-direction: row;
-}
 
 .imgcannebiere{
     width: auto;
-    height: 150px;
+    height: 200px;
 }
 
 .cannebiere{
-    border: solid 2px red;    
+    
+    background: url(./images/Auberge_Cannebiere.jpg);
+    border-radius: 50px;
+    border: solid 2px red; 
+    grid-area: c;   
 }
 
 .imgmer{
@@ -67,7 +105,9 @@
 }
 
 .mer{
+    border-radius: 50px;
     border: solid 2px blue;
+    grid-area: me;
 }
 
 .imgport{
@@ -76,7 +116,9 @@
 }
 
 .port{
+    border-radius: 50px;
     border: solid 2px green;
+    grid-area: po;
 }
 
 .imgpanier{
@@ -86,6 +128,7 @@
 
 .panier{
     border: solid 2px pink;
+    grid-area: pa;
 }
 
 .imgmouettes{
@@ -95,6 +138,7 @@
 
 .mouettes{
     border: solid 2px orange;
+    grid-area: mo;
 }
 
 .imgamina{
@@ -104,7 +148,10 @@
 
 .amina{
     border: solid 2px brown;
+    grid-area: a;
 }
+
+/* Populaires.................................. */
 
 .imgsoleil{
     width: auto;
@@ -113,6 +160,7 @@
 
 .soleil{
     border: solid 2px cyan;
+    grid-area: s;
 }
 
 .imgeau{
@@ -122,6 +170,7 @@
 
 .eau{
     border: solid 2px gray;
+    grid-area: e;
 }
 
 .imgbleu{
@@ -131,4 +180,5 @@
 
 .bleu{
     border: solid 2px black;
+    grid-area: b;
 }
