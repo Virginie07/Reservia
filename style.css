@@ -20,6 +20,7 @@ ul{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 20px;
 }
 
 .imglogo{
@@ -41,11 +42,13 @@ ul{
 /* Bouton recherche............................ */
 
 .bouton{
-    
+    display: flex;
     border: solid 1px grey;
-    border-radius: 50px;
-
+    border-radius: 20px;
+    height: 50px;
 } 
+
+
 
 /* Filtres......................................*/
 
@@ -59,9 +62,9 @@ ul{
 
 .hebergements{
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: auto auto;
     grid-template-areas: "m p";
-    grid-gap: 4px;
+    grid-gap: 20px;
     border: solid 2px fuchsia;
 }
 
@@ -71,80 +74,63 @@ ul{
     grid-area: m;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 
     "c po mo"
     "me pa a";
-    border-radius: 50px;
-    background: grey;
-}
-
-.populaires{
-    border-radius: 50px;
-    background: grey;
-    grid-area: p;
-}
-
-
-.imgcannebiere{
-    width: auto;
-    height: 200px;
-}
-
-.cannebiere{
+    column-gap: 10px;
+    row-gap: 10px;
+    border-radius: 30px;
+    background: yellow;
+    padding: 20px;
     
-    background: url(./images/Auberge_Cannebiere.jpg);
-    border-radius: 50px;
+}
+
+
+.boite{
+    background: white;
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+}
+
+.imgboite{
+    object-fit: cover;
+    width: 100%;
+    height: 8rem;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 30px 30px 0 0;
+}
+
+.cannebiere{   
     border: solid 2px red; 
     grid-area: c;   
 }
 
-.imgmer{
-    width: auto;
-    height: 150px;
-}
 
-.mer{
-    border-radius: 50px;
+.mer{  
     border: solid 2px blue;
     grid-area: me;
 }
 
-.imgport{
-    width: auto;
-    height: 150px;
-}
 
 .port{
-    border-radius: 50px;
     border: solid 2px green;
     grid-area: po;
 }
 
-.imgpanier{
-    width: auto;
-    height: 150px;
-}
 
 .panier{
     border: solid 2px pink;
     grid-area: pa;
 }
 
-.imgmouettes{
-    width: auto;
-    height: 150px;
-}
 
 .mouettes{
     border: solid 2px orange;
     grid-area: mo;
 }
 
-.imgamina{
-    width: auto;
-    height: 150px;
-}
 
 .amina{
     border: solid 2px brown;
@@ -153,30 +139,40 @@ ul{
 
 /* Populaires.................................. */
 
-.imgsoleil{
-    width: auto;
-    height: 150px;
+.populaires{
+    border-radius: 50px;
+    background: yellowgreen;
+    grid-area: p;
+    padding: 20px;
 }
+
+.box{
+    display: flex;
+    background: white;
+    margin: 20px;
+}
+
+.imgbox{
+    object-fit: cover;
+    width: 100%;
+    height: 8rem;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 30px 0 0 30px;
+}
+
 
 .soleil{
     border: solid 2px cyan;
     grid-area: s;
 }
 
-.imgeau{
-    width: auto;
-    height: 150px;
-}
 
 .eau{
     border: solid 2px gray;
     grid-area: e;
 }
 
-.imgbleu{
-    width: auto;
-    height: 150px;
-}
 
 .bleu{
     border: solid 2px black;

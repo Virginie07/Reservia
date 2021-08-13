@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservia</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="C:\Users\33683\Desktop\Reservia\fontawesome-free-5.15.4-web\fontawesome-free-5.15.4-web\css\all.css">
 </head>
 
 
@@ -26,18 +27,25 @@
 
         </nav>
     </div>
+
+    <br>
     
     <!-- Recherche..................................... -->
 
 <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
 <p>En plein centre ville ou en pleine nature</p>
 
+<br>
+
 <div class="bouton">
 
-    <input type="search">
+    <div class="localisation"><i class="fas fa-map-marker-alt"></i></div>
+    <input type="search" placeholder="Marseille, France">
     <button>Rechercher</button>
 
 </div>
+
+<br>
 
     <!-- Filtres........................................ -->
 
@@ -51,61 +59,65 @@
 
 </div>
 
+<br>
+
 <p>Plus de 500 logements sont disponibles dans cette ville</p>
 
     <!-- Espace Hébergement.............................. -->
 
 <section class="hebergements">
 
-    <h2 id="#hebergements">Hébergements à Marseille</h2>
+    
 
     <div class="marseille">
 
+        <h2 id="#hebergements">Hébergements à Marseille</h2>
 
-        <div class="cannebiere">
 
-            <!-- <img src="./images/Auberge_Cannebiere.jpg" alt="" class="imgcannebiere"> -->
+        <div class="cannebiere boite">
+
+            <img src="./images/Auberge_Cannebiere.jpg" alt="" class="imgboite">
             <p><b>Auberge La Cannebière</b></p>
             <p>Nuit à partir de <b>25€</b></p>
 
         </div>
 
-        <div class="mer">
+        <div class="mer boite">
 
-            <img src="./images/Hotelmer.jpg" alt="" class="imgmer">
+            <img src="./images/Hotelmer.jpg" alt="" class="imgboite imgmer">
             <p><b>Hôtel de la mer</b></p>
             <p>Nuit à partir de <b>46€</b></p>
 
         </div>
 
-        <div class="port">
+        <div class="port boite">
 
-                <img src="./images/Hotel_port.jpg" alt="" class="imgport">
+                <img src="./images/Hotel_port.jpg" alt="" class="imgboite">
                 <p><b>Hôtel du port</b></p>
                 <p>Nuit à partir de <b>52€</b></p>
     
         </div>
 
-        <div class="panier">
+        <div class="panier boite">
 
-            <img src="./images/Auberge_Panier.jpg" alt="" class="imgpanier">
+            <img src="./images/Auberge_Panier.jpg" alt="" class="imgboite">
             <p><b>Auberge Le Panier</b></p>
             <p>Nuit à partir de <b>23€</b></p>
 
         </div>
 
-        <div class="mouettes">
+        <div class="mouettes boite">
 
-                <img src="./images/Hotel_mouettes.jpg" alt="" class="imgmouettes">
+                <img src="./images/Hotel_mouettes.jpg" alt="" class="imgboite">
                 <p><b>Hôtel Les Mouettes</b></p>
                 <p>Nuit à partir de <b>76€</b></p>
     
         </div>
 
 
-        <div class="amina">
+        <div class="amina boite">
 
-            <img src="./images/Hotel_Amina.jpg" alt="" class="imgamina">
+            <img src="./images/Hotel_Amina.jpg" alt="" class="imgboite imgamina">
             <p><b>Hôtel chez Amina</b></p>
             <p>Nuit à partir de <b>96€</b></p>
 
@@ -117,28 +129,40 @@
 
         <h2>Les plus populaires</h2>
 
-        <div class="soleil">
+        <div class="soleil box">
 
-            <img src="./images/Hotel_Soleildumatin.jpg" alt="" class="imgsoleil">
-            <p><b>Hôtel Le soleil du matin</b></p>
-            <p>Nuit à partir de <b>128€</b></p>
+            <div>
+                <img src="./images/Hotel_Soleildumatin.jpg" alt="" class="imgbox">
+            </div>
+            <div>
+                <p><b>Hôtel Le soleil du matin</b></p>
+                <p>Nuit à partir de <b>128€</b></p>
+            </div>
             
         </div>
 
-        <div class="eau">
+        <div class="eau box">
 
-            <img src="./images/Chambre_Aucoeurdeleau.jpg" alt="" class="imgeau">
-            <p><b>Au coeur de l'eau</b></p>
-            <p><b>Chambres d'hôtes</b></p>
-            <p>Nuit à partir de <b>71€</b></p>
+            <div>
+                <img src="./images/Chambre_Aucoeurdeleau.jpg" alt="" class="imgbox">
+            </div>
+            <div>
+                <p><b>Au coeur de l'eau</b></p>
+                <p><b>Chambres d'hôtes</b></p>
+                <p>Nuit à partir de <b>71€</b></p>
+            </div>
 
         </div>
 
-        <div class="bleu">
+        <div class="bleu box">
 
-            <img src="./images/Hotel_Toutbleuetblanc.jpg" alt="" class="imgbleu">
-            <p><b>Hôtel Tout bleu et Blanc</b></p>
-            <p>Nuit à partir de <b>68€</b></p>
+            <div>
+                <img src="./images/Hotel_Toutbleuetblanc.jpg" alt="" class="imgbox">
+            </div>
+            <div>
+                <p><b>Hôtel Tout bleu et Blanc</b></p>
+                <p>Nuit à partir de <b>68€</b></p>
+            </div>
 
         </div>
 
