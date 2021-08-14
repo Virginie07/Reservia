@@ -11,6 +11,7 @@
 
 
 <body>
+<section class="main">
 
     <!-- Header....................................... -->
 
@@ -39,9 +40,13 @@
 
 <div class="bouton">
 
-    <div class="localisation"><i class="fas fa-map-marker-alt"></i></div>
-    <input type="search" placeholder="Marseille, France">
-    <button>Rechercher</button>
+    <div class="localisation">
+        <i class="fas fa-map-marker-alt"></i>
+    </div>
+
+    <input type="search" placeholder="Marseille, France" class="input">
+
+    <button class="clique">Rechercher</button>
 
 </div>
 
@@ -51,7 +56,7 @@
 
 <div class="filtres">
 
-    <p>Filtres</p>
+    <p><b>Filtres</b></p>
     <p class="f">Economique</p>
     <p class="f">Familial</p>
     <p class="f">Romantique</p>
@@ -61,18 +66,27 @@
 
 <br>
 
-<p>Plus de 500 logements sont disponibles dans cette ville</p>
+    <!-- Information..................................... -->
+
+<div class="info">
+
+    <div class="icone">
+        <i class="fas fa-info"></i>
+    </div>
+
+    <p class="parainfo">Plus de 500 logements sont disponibles dans cette ville</p>
+
+</div>
 
     <!-- Espace Hébergement.............................. -->
 
 <section class="hebergements">
 
-    
+            <!-- Marseille................................ -->
 
     <div class="marseille">
 
-        <h2 id="#hebergements">Hébergements à Marseille</h2>
-
+        <h2 class="titremarseille">Hébergements à Marseille</h2>
 
         <div class="cannebiere boite">
 
@@ -124,6 +138,7 @@
         </div>
 
     </div>
+            <!-- Populaires................................ -->
 
     <div class="populaires">
 
@@ -170,6 +185,9 @@
 
 
 </section>
+
+<!-- Activités.............................................. -->
+
 
 <section class="activites">
 
@@ -247,6 +265,8 @@
     
     </div>
 
+
+</section>
 
 </section>
 
