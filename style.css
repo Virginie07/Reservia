@@ -16,7 +16,7 @@ body{
 /* header................................ */
 
 .tete{
-    border: solid 2px red;
+    /* border: solid 2px red; */
     display: flex;
 }
 
@@ -35,7 +35,7 @@ ul{
 .accueil{
     width: 30%;
     margin-left: auto;
-    border: solid 2px blueviolet;
+    /* border: solid 2px blueviolet; */
 }
 
 .liens{
@@ -53,12 +53,13 @@ ul{
 } 
 
 .input{
+    padding: 20px;
     font-weight: bold;
     font-size: 18px;
 }
 
 .localisation{
-    border: solid 1px black;
+    /* border: solid 1px black; */
     border-radius: 12px 0 0 12px;
     padding: 15px;
     text-align: center;
@@ -78,17 +79,37 @@ ul{
 /* Filtres......................................*/
 
 .filtres{
-    border: solid 2px purple;
+    /* border: solid 2px purple; */
     display: flex;
     flex-direction: row;
     list-style-type: none;
 }
 
+.f{
+    border: solid 2px grey;
+    border-radius: 50px;
+    margin: 0 30px 0 30px;
+    padding: 0 10px 0 0;
+    display: flex;
+}
+
+.iconef{
+    background: #deebff;
+    color: #0065fc;
+    border-radius: 100%;
+    padding: 20px;
+}
+
+.paraf{
+    padding: 20px 10px 20px 10px;
+}
+
+
 /* Information.................................. */
 
 .info{
     display: flex;
-    border: solid 2px green;     
+    /* border: solid 2px green;      */
 }
 
 .parainfo{
@@ -110,8 +131,14 @@ ul{
     grid-template-columns: auto auto;
     grid-template-areas: "m p";
     grid-gap: 20px;
-    border: solid 2px fuchsia;
+    /* border: solid 2px fuchsia; */
+    margin-top: 20px;
 }
+
+.iconestar{
+    color: #0065fc;
+}
+
 
 /* Marseille.................................... */
 
@@ -125,8 +152,8 @@ ul{
     "me pa a";
     column-gap: 10px;
     row-gap: 10px;
-    border-radius: 30px;
-    background: yellow;
+    border-radius: 20px;
+    background: #f2f2f2;
     padding: 20px;
     
 }
@@ -138,59 +165,62 @@ ul{
 .boite{
     background: white;
     width: 300px;
-    height: 300px;
-    border-radius: 30px;
+    height: 250px;
+    border-radius: 25px;
+    /* border: solid 2px blue; */
+    padding: 5px;
 }
 
 .imgboite{
     object-fit: cover;
     width: 100%;
-    height: 8rem;
+    height: 9rem;
     max-width: 100%;
     max-height: 100%;
-    border-radius: 30px 30px 0 0;
+    border-radius: 25px 25px 0 0;
 }
 
 .cannebiere{   
-    border: solid 2px red; 
     grid-area: c;   
 }
 
 
 .mer{  
-    border: solid 2px blue;
     grid-area: me;
 }
 
 
 .port{
-    border: solid 2px green;
     grid-area: po;
 }
 
 
 .panier{
-    border: solid 2px pink;
     grid-area: pa;
 }
 
 
 .mouettes{
-    border: solid 2px orange;
     grid-area: mo;
 }
 
 
 .amina{
-    border: solid 2px brown;
     grid-area: a;
 }
 
 /* Populaires.................................. */
 
 .populaires{
-    border-radius: 30px;
-    background: yellowgreen;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "tp"
+    "s"
+    "e"
+    "b";
+    border-radius: 20px;
+    background: #f2f2f2;
     grid-area: p;
     padding: 20px;
 }
@@ -199,34 +229,167 @@ ul{
     display: flex;
     background: white;
     margin: 20px;
-    border-radius: 30px;
+    border-radius: 25px;
+    /* border: solid 2px fuchsia; */
+    padding: 5px;
 }
 
 .imgbox{
     object-fit: cover;
-    width: 100%;
-    height: 8rem;
+    width: 180px;
+    height: 130px;
     max-width: 100%;
     max-height: 100%;
-    border-radius: 30px 0 0 30px;
+    border-radius: 25px 0 0 25px;
 }
 
+.texte{
+    margin-left: 20px;
+    margin-right: 25px;
+}
+
+.prix{
+    line-height: 30px;
+}
+
+.titrepopulaires{
+    grid-area: tp;
+}
 
 .soleil{
-    border: solid 2px cyan;
     grid-area: s;
 }
 
 
 .eau{
-    border: solid 2px gray;
     grid-area: e;
 }
 
 
 .bleu{
-    border: solid 2px black;
     grid-area: b;
 }
 
 /* Activités à Marseille............................... */
+
+.activites{
+    /* border: solid 2px blueviolet; */
+    background: white;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    grid-template-rows: 3rem 10rem 3rem 3rem 3rem 10rem;
+    grid-template-areas: 
+    "ta . . ."
+    "vp pom par g"
+    "vp pom par ."
+    "vp pom par l"
+    "vp . par l"
+    "vp f par l";
+}
+
+.case{
+    background: white;
+    width: 300px;
+    height: auto;
+    border-radius: 25px;
+    /* border: solid 2px red; */
+    padding: 5px;
+}
+
+.imgcase{
+    object-fit: cover;
+    width: 100%;
+    height: 8rem;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 25px 25px 0 0;
+}
+
+.txtactiv{
+    /* border: solid 2px black; */
+    height: 20px;
+    padding: 20px;
+}
+
+.imgvp{
+    height: 90%;
+}
+
+.imgpom{
+    height: 80%;
+}
+
+.imgfrioul{
+    height: 70%;
+
+}
+
+.imgcal{
+    height: 88%;
+}
+
+.imggarde{
+    height: 70%;
+}
+
+.imglong{
+    height: 80%;
+}
+
+.titreactivites{
+    grid-area: ta;
+}
+
+.vieuxport{
+    grid-area: vp;
+}
+
+.pomegues{
+    grid-area: pom;
+}
+
+.frioul{
+    grid-area: f;
+}
+
+.parc{
+    grid-area: par;
+}
+
+.garde{
+    grid-area: g;
+}
+
+.longchamp{
+    grid-area: l;
+}
+
+/* Footer..................................... */
+
+.footer{
+border: #f2f2f2;
+margin-top: 20px;
+margin-bottom: 20px;
+padding-top: 20px;
+padding-left: 20px;
+background: lightpink;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-areas: "ap ch as";
+line-height: 2;
+}
+
+.apropos{
+    grid-area: ap;
+}
+
+.charte{
+    grid-area: ch;
+}
+
+.assistance{
+    grid-area: as;
+}
