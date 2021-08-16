@@ -48,7 +48,7 @@ ul{
 
 .bouton{
     display: flex;
-    border: solid 2px black;
+    /* border: solid 2px black; */
     height: 60px;
 } 
 
@@ -375,7 +375,7 @@ margin-top: 20px;
 margin-bottom: 20px;
 padding-top: 20px;
 padding-left: 20px;
-background: lightpink;
+background: #f2f2f2;
 display: grid;
 grid-template-columns: repeat(3, 1fr);
 grid-template-areas: "ap ch as";
