@@ -15,6 +15,11 @@ body{
 
 /* header................................ */
 
+.mobiltete{
+    display: none;
+}
+
+
 .tete{
     /* border: solid 2px red; */
     display: flex;
@@ -92,6 +97,9 @@ a{
     font-size: 1.1rem;
 }
 
+.mobilclique{
+    display: none;
+}
 
 
 /* Filtres......................................*/
@@ -163,15 +171,6 @@ a{
     margin-top: 20px;
 }
 
-.iconestar{
-    color: #0065fc;
-}
-
-.iconestarstar{
-    color: #0065fc;
-    padding-top: 1.5rem; 
-}
-
 
 /* Marseille.................................... */
 
@@ -204,7 +203,7 @@ a{
     border-radius: 25px;
     padding: 0.4rem;
     line-height: 1.5rem;
-    box-shadow: 0 0 30px grey;
+    box-shadow: 0 0 15px rgb(197, 195, 195);
 }
 
 .imgboite{
@@ -214,6 +213,10 @@ a{
     max-width: 100%;
     max-height: 100%;
     border-radius: 25px 25px 0 0;
+}
+
+.iconestar{
+    color: #0065fc;
 }
 
 .cannebiere{   
@@ -266,7 +269,7 @@ a{
     display: flex;
     background: white;
     border-radius: 25px;
-    box-shadow: 0 0 30px grey;
+    box-shadow: 0 0 15px rgb(197, 195, 195);
     padding: 0.4rem;
     height: 10rem;
     width: 20rem;
@@ -287,6 +290,11 @@ a{
     /* border: solid 2px chartreuse; */
     width: 100%;
     padding: 0.5rem 0.5rem 1rem 1rem;
+}
+
+.iconestarstar{
+    color: #0065fc;
+    padding-top: 1.5rem; 
 }
 
 .imgbleu{
@@ -348,7 +356,7 @@ a{
     height: auto;
     border-radius: 25px; 
     padding: 5px;
-    box-shadow: 0 0 30px grey;
+    box-shadow: 0 0 15px rgb(197, 195, 195);
 }
 
 .imgcase{
@@ -422,12 +430,13 @@ a{
 
 .footer{
 border: #f2f2f2;
-margin-top: 20px;
-margin-bottom: 20px;
-padding-top: 20px;
-padding-left: 20px;
-padding-bottom: 20px;
+margin-top: 3rem;
+margin-bottom: 3rem;
+padding-top: 2rem;
+padding-left: 3rem;
+padding-bottom: 3rem;
 background: #f2f2f2;
+
 display: grid;
 grid-template-columns: repeat(3, 1fr);
 grid-template-areas: "ap ch as";
@@ -504,42 +513,73 @@ line-height: 2;
 
 @media screen and (max-device-width: 375px){
 
+    .main{
+        margin-left: 2.5rem;
+    }
 
-    /* GRID header................................. */
 
+    /* Mobile GRID header................................. */
 
     .tete{
+        display: none;
+    }
+
+    .mobiltete{
+        border-bottom: solid 2px #f2f2f2;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: 
-        "log li"
-        "lh la";
+        "iml . li" 
+        "lh . la";
+
+        width: 100%;
+        margin-bottom: 2rem;
     }
 
-    .imglogo{
-        grid-area: log;
+    .imglog{
+        grid-area: iml;
+        margin-right: auto;
+        width: 5rem;
+        height: 2.5rem;
     }
 
-    .lienheber{
-        grid-area: lh;
-    }
-
-    .lienactivites{
-        grid-area: la;
-    }
-
-    .lieninsc{
+    .lieni{
         grid-area: li;
+        padding-top: 0.5rem;
     }
 
+    .lienh{
+        grid-area: lh;
+        padding-top: 1.5rem;
+        border-bottom: solid 2px #0065fc;
+    }
 
-    /* GRID Filtres................................ */
+    .liena{
+        grid-area: la;
+        padding-top: 1.5rem;
+    }
+
+    /* Mobil Barre de recherche............................*/
+
+    .clique{
+        display: none;
+    }
+
+    .mobilclique{
+        display: flex;
+        align-items: center;
+        border-radius: 0 1rem 1rem 0;
+        background: #0065fc;
+        color: white;
+        padding: 1rem;
+    }
+
+    /* Mobile GRID Filtres................................ */
 
     
     .filtres{
         display: grid;
-        grid-template-columns: 1fr 4rem auto;
+        grid-template-columns: auto 4rem auto;
         grid-template-areas: 
         "pf . ."
         "ec fam fam"
@@ -573,12 +613,7 @@ line-height: 2;
     }
 
 
-    /* Information...................................... */
-
-
-  
-
-    /* GRID Hebergements................................ */
+    /* Mobile GRID Hebergements................................ */
 
 
     .hebergements{
@@ -586,26 +621,47 @@ line-height: 2;
         grid-template-rows: auto auto;
         grid-template-areas: "p" "m";
     }
-        /* Marseille..................................... */
+             /* GRID Marseille..................................... */
 
     .marseille{
         grid-area: m;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr 1fr auto;
+        grid-template-rows:repeat(8, auto);
         grid-template-areas:
         "t" "c" "po" "mo" "me" "pa" "a" "pp";  
+
+        background: white;
     }
 
-    /* GRID Activités.................................... */
+    .boite{
+        height: 11rem;
+    }
+
+    .imgboite{
+        height: 50%;
+    }
+
+            /* Populaires............................................ */
+
+    .populaires{
+        border-radius: 0;
+    }
+
+
+    /* Mobile GRID Activités.................................... */
 
         .activites{
              grid-template-rows: auto repeat(6, 1fr);
              grid-template-areas: "ta" "vp" "pom" "f" "par" "g" "l";
+
+             margin-top: 0;
         }
 
+
         .case{
-            margin: 2rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
             height: 11rem;
         }
 
@@ -624,4 +680,25 @@ line-height: 2;
         .imglong{
             height: 70%;
         }
+
+        /* Mobile Footer................................... */
+
+        .footer{
+            grid-template-columns: 1fr;
+            grid-template-rows: auot auto auto;
+            grid-template-areas: "ap" "ch" "as";
+
+            margin-top: 2rem;
+            margin-left: 2rem;
+            width: 20rem;
+        }
+
+        .apropos{
+            padding-bottom: 2rem;
+        }
+
+        .assistance{
+            padding-top: 2rem;
+        }
+
 }
