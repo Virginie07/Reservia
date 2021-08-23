@@ -41,6 +41,7 @@ ul{
 .lienheber{
     border-top: solid 2px #0065fc;
     height: 100%;
+    color: #0065fc;
 }
 
 
@@ -468,7 +469,7 @@ line-height: 2;
 
 @media screen and (max-device-width:1080px){
 
-    /* Mobil Head.................................................. */
+    /* Responsive 1080px Head.................................................. */
 
     .lienheber{
         margin-right: 1rem;
@@ -478,7 +479,7 @@ line-height: 2;
         margin-right: 1rem; 
     }
     
-    /* Mobil GRID Hebergements..................................... */
+    /* Responsive 1080px GRID Hebergements..................................... */
 
     .titremarseille{
         margin-top: 1rem;
@@ -514,7 +515,7 @@ line-height: 2;
     }
 
 
-    /* Mobil GRID Activites...................................... */
+    /* Responsive 1080px GRID Activites...................................... */
 
     .activites{
         display: grid;
@@ -536,7 +537,8 @@ line-height: 2;
         margin: 1rem;
     }
 
-    /* Mobil Footer.............................................. */
+    /* Responsive 1080px Footer.............................................. */
+
     .footer{
         display: grid;
         grid-template-columns: 9fr 9fr 9fr;
@@ -552,6 +554,8 @@ line-height: 2;
 
 
 @media screen and (max-device-width:770px){
+
+    /* Responsive 770px Populaires........................ */
 
     .populaires{
         grid-template-areas: "tp" "ph";
@@ -569,13 +573,15 @@ line-height: 2;
 
 @media screen and (max-device-width: 375px){
 
+    /* Responsive 375px Main............................... */
+
     .main{
         margin-left: 2rem;
         margin-right: 2rem;
     }
 
 
-    /* Mobile GRID header................................. */
+    /* Responsive 375px GRID header......................... */
 
     .tete{
         display: none;
@@ -617,7 +623,7 @@ line-height: 2;
         padding-top: 1.5rem;
     }
 
-    /* Mobil Barre de recherche............................*/
+    /* Responsive 375px Barre de recherche..........................*/
 
     .clique{
         display: none;
@@ -632,7 +638,7 @@ line-height: 2;
         padding: 1rem;
     }
 
-    /* Mobile GRID Filtres................................ */
+    /* Responsive 375px GRID Filtres................................ */
 
     
     .filtres{
@@ -671,7 +677,7 @@ line-height: 2;
     }
 
 
-    /* Mobile GRID Hebergements................................ */
+    /* Responsive 375px GRID Hebergements.......................... */
 
 
     .hebergements{
@@ -717,11 +723,11 @@ line-height: 2;
         flex-direction: column ;
         border-radius: 0;
         grid-area: p;
-    }
+    } 
     
 
 
-    /* Mobile GRID Activités.................................... */
+    /* Responsive 375px GRID Activités.............................. */
 
         .activites{
              grid-template-rows: auto repeat(6, 1fr);
@@ -753,7 +759,7 @@ line-height: 2;
             height: 70%;
         }
 
-        /* Mobile Footer................................... */
+        /* Responsive 375px Footer................................... */
 
         .footer{
             grid-template-columns: 1fr;
