@@ -458,8 +458,6 @@ h2{
 /* Footer..................................... */
 
 .footer{
-border: #f2f2f2;
-
 margin-top: 3rem;
 margin-bottom: 3rem;
 
@@ -473,6 +471,7 @@ grid-template-columns: auto auto auto;
 grid-template-areas: "ap ch as";
 line-height: 2;
 }
+
 
 .apropos{
     grid-area: ap;
@@ -492,7 +491,7 @@ line-height: 2;
 /* RESPONSIVE............................................................................ */
 
 
-@media screen and (max-device-width:1080px){
+@media (max-width:1080px){
 
     /* Responsive 1080px Head.................................................. */
 
@@ -578,7 +577,7 @@ line-height: 2;
 }
 
 
-@media screen and (max-device-width:770px){
+@media (max-width:770px){
 
     /* Responsive 770px Populaires........................ */
 
@@ -596,7 +595,7 @@ line-height: 2;
 }
 
 
-@media screen and (max-device-width: 375px){
+@media (max-width: 375px){
 
 
     /* Responsive 375px GRID header......................... */
@@ -791,7 +790,7 @@ line-height: 2;
 
         .footer{
             grid-template-columns: 1fr;
-            grid-template-rows: auot auto auto;
+            grid-template-rows: auto auto auto;
             grid-template-areas: "ap" "ch" "as";
 
             margin-top: 2rem;
